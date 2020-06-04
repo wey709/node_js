@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>twt crawling - test page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../public/stylesheets/styles.css" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+
+</style>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">twt-test</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/twt">Trump</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">something</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">else</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+    <table class="table table-dark" style="margin:50px 20px">
+          <tr>
+        <th>no</th>
+        <th>contents</th>
+        <th>tweet_date</th>
+        <th>retweets</th>
+      </tr>
+    {{#rows}}
+
+      <tr>
+        <td>{{id}}</td>
+        <td>{{contents}}</td>
+        <td>{{tweet_date}}</td>
+        <td>{{retweets}}</td>
+      </tr>
+    {{/rows}}
+    </table>
+
+
+  </body>
+</html>
