@@ -26,8 +26,8 @@ app.get('/list', (req, res)=>{
 
 app.get('/twt', (req, res) => {
   const client = new Client({
-    user: 'young',
-   password: 930709,
+  user: process.env.PG_USER,
+   password: process.env.PG_PASSWORD,  
    host: process.env.PG_HOST,
    port: process.env.PG_PORT,
    database: process.env.PG_DATABASE
@@ -54,8 +54,8 @@ app.get('/twt', (req, res) => {
   app.get('/twt/rt/:id', (req, res)=>{
 
     const client = new Client({
-      user: 'young',
-      password: 930709,
+      user: process.env.PG_USER,
+      password: process.env.PG_PASSWORD,  
       host: process.env.PG_HOST,
       port: process.env.PG_PORT,
       database: process.env.PG_DATABASE
