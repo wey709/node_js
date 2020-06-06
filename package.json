@@ -1,7 +1,6 @@
 {
-  "name": "book-list-pg-node",
+  "name": "nodejs_db",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +8,7 @@
     "scss": "node-sass scss/style.scss public/style.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "young",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -18,5 +17,15 @@
     "mustache-express": "^1.3.0",
     "node-sass": "^4.14.1",
     "pg": "^8.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wey709/node_js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wey709/node_js/issues"
+  },
+  "homepage": "https://github.com/wey709/node_js#readme",
+  "description": ""
 }

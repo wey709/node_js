@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="../public/stylesheets/styles.css" type="text/css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 <style>
@@ -42,19 +42,26 @@
   </nav>
 
 
-<img src="twitter-292988_1920.jpg" style="margin:50px">
 
 
-  <div class="nav-foot">
-    <p class="foot-text">
-      contact: verte709@gmail.com
-    </p>
-  </div>
+<!-- Overlay effect when opening sidebar on small screens -->
+
+    <table class="table table-dark" style="margin:50px 20px">
+          <tr>
+        <th>no</th>
+        <th>user_name</th>
+        <th>user_id</th>
+      </tr>
+    {{#rows}}
+
+      <tr>
+        <td>{{id}}</td>
+        <td>{{username}}</td>
+        <td>{{uid}}</td>
+      </tr>
+    {{/rows}}
+    </table>
 
 
-<!-- END MAIN -->
-</div>
-
-
-</body>
+  </body>
 </html>
